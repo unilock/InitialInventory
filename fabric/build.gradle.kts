@@ -5,7 +5,7 @@ import net.darkhax.curseforgegradle.TaskPublishCurseForge
 import net.darkhax.curseforgegradle.Constants as CFG_Constants
 
 plugins {
-    id("fabric-loom") version "1.4-SNAPSHOT"
+    id("fabric-loom") version "1.10-SNAPSHOT"
     id("com.blamejared.initialinventory.default")
     id("com.blamejared.initialinventory.loader")
     id("com.modrinth.minotaur")

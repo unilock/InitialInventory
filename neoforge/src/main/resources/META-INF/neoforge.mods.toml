@@ -1,10 +1,10 @@
 modLoader = "javafml"
-loaderVersion = "${FORGE_LOADER}"
+loaderVersion = "${NEO_FORGE_LOADER}"
 issueTrackerURL = "${GIT_REPO}/issues"
 license = "MIT"
 [[mods]]
 modId = "${MODID}"
-updateJSONURL = "https://updates.blamejared.com/get?n=${MODID}&gv=${MINECRAFT}&ml=forge"
+updateJSONURL = "https://updates.blamejared.com/get?n=${MODID}&gv=${MINECRAFT}&ml=neoforge"
 version = "${version}"
 displayName = "${NAME}"
 displayURL = "${CURSE_HOMEPAGE}"
@@ -13,20 +13,20 @@ logoFile = "icon.png"
 description = '''${DESCRIPTION}'''
 itemIcon = "${ITEM_ICON}"
 [[dependencies.${MODID}]]
-modId = "forge"
-mandatory = true
-versionRange = "${FORGE_LOADER}"
+modId = "neoforge"
+type = "required"
+versionRange = "${NEO_FORGE_LOADER}"
 ordering = "NONE"
 side = "BOTH"
 [[dependencies.${MODID}]]
 modId = "minecraft"
-mandatory = true
+type = "required"
 versionRange = "[${MINECRAFT}]"
 ordering = "NONE"
 side = "BOTH"
 [[dependencies.${MODID}]]
 modId = "crafttweaker"
-mandatory = true
+type = "required"
 versionRange = "[${CRAFTTWEAKER},)"
 ordering = "NONE"
 side = "BOTH"

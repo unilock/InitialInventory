@@ -12,10 +12,9 @@ pluginManagement {
     }
 }
 plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 rootProject.name = "InitialInventory"
 include("common")
 include("fabric")
-include("forge")
 include("neoforge")

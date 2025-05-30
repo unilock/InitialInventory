@@ -7,7 +7,7 @@ import net.darkhax.curseforgegradle.TaskPublishCurseForge
 plugins {
     id("com.blamejared.initialinventory.default")
     id("com.blamejared.initialinventory.loader")
-    id("net.neoforged.gradle.userdev") version ("7.0.71")
+    id("net.neoforged.gradle.userdev") version ("7.0.184")
     id("com.modrinth.minotaur")
 }
 

@@ -2,17 +2,17 @@ package com.blamejared.initialinventory;
 
 
 import net.minecraft.world.entity.player.Player;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 
 @Mod("initialinventory")
-public class InitialInventoryForge {
+public class InitialInventoryNeoForge {
     
-    public InitialInventoryForge() {
+    public InitialInventoryNeoForge() {
         
-        MinecraftForge.EVENT_BUS.register(this);
+        NeoForge.EVENT_BUS.register(this);
     }
     
     @SubscribeEvent

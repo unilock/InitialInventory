@@ -42,7 +42,7 @@ class DefaultPlugin : Plugin<Project> {
         project.plugins.apply(BasePlugin::class.java)
         val base = project.extensions.getByType(BasePluginExtension::class.java)
 
-        base.archivesName.set("${Properties.NAME}-${project.name.toLowerCase()}-${Versions.MINECRAFT}")
+        base.archivesName.set("${Properties.NAME}-${project.name.lowercase()}-${Versions.MINECRAFT}")
         project.version = GMUtils.updatingVersion(Versions.MOD)
         project.group = Properties.GROUP
 
@@ -68,7 +68,7 @@ class DefaultPlugin : Plugin<Project> {
         project.plugins.apply(JavaLibraryPlugin::class.java)
 
         with(project.extensions.getByType(JavaPluginExtension::class.java)) {
-            toolchain.languageVersion.set(JavaLanguageVersion.of(JavaVersion.VERSION_17.majorVersion))
+            toolchain.languageVersion.set(JavaLanguageVersion.of(JavaVersion.VERSION_21.majorVersion))
             withSourcesJar()
             withJavadocJar()
             sourceSets {
@@ -130,7 +130,7 @@ class DefaultPlugin : Plugin<Project> {
                         "FAUX_CUSTOM_ENTITY_DATA" to Versions.FAUX_CUSTOM_ENTITY_DATA
                 )
                 inputs.properties(properties)
-                filesMatching(setOf("fabric.mod.json", "META-INF/mods.toml", "pack.mcmeta")) {
+                filesMatching(setOf("fabric.mod.json", "META-INF/mods.toml", "META-INF/neoforge.mods.toml", "pack.mcmeta")) {
                     expand(properties)
                 }
             }

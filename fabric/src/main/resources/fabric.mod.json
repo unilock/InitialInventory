@@ -27,7 +27,7 @@
     "fabricloader": ">=${FABRIC_LOADER}",
     "java": ">=${JAVA}",
     "minecraft": "${MINECRAFT}",
-    "fabric": "*",
+    "fabric-api": "*",
     "crafttweaker": ">=${CRAFTTWEAKER}",
     "faux-custom-entity-data": ">=${FAUX_CUSTOM_ENTITY_DATA}"
   }

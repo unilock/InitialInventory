@@ -7,14 +7,14 @@ def botUsername = 'crafttweakerbot'
 def botEmail = 'crafttweakerbot@gmail.com'
 
 def documentationDir = 'CrafttweakerDocumentation'
-def exportDirInRepo = 'docs_exported/1.20.3/initialinventory'
+def exportDirInRepo = 'docs_exported/1.21.1/initialinventory'
 
-def branchName = '1.20.3'
+def branchName = '1.21.1'
 
 pipeline {
     agent any
     tools {
-        jdk 'jdk-17.0.1'
+        jdk 'jdk-21.0.7'
     }
     environment {
         modrinth_token = credentials('modrinth_token')
