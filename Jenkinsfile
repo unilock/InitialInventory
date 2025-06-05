@@ -14,7 +14,7 @@ def branchName = '1.21.1'
 pipeline {
     agent any
     tools {
-        jdk 'jdk-21.0.7'
+        jdk 'jdk-21'
     }
     environment {
         modrinth_token = credentials('modrinth_token')
