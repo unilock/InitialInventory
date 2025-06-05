@@ -1,7 +1,7 @@
 package com.blamejared.initialinventory.gradle
 
 object Versions {
-    const val MOD = "13.0"
+    const val MOD = "14.0"
     const val JAVA = "21"
     const val MINECRAFT = "1.21.1"
     const val FABRIC_LOADER = "0.16.14"
